@@ -1,0 +1,18 @@
+{
+    "name": "carloschininin/facturax-sunat",
+    "description": "Catálogos SUNAT del Anexo N.° 8 para interpretar códigos de comprobantes electrónicos, resúmenes y documentos relacionados.",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.4",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CarlosChininin\\FacturaxSunat\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
