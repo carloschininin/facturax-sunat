@@ -73,7 +73,7 @@ $catalogs->toJson(1);
 
 ## Fuente
 
-- Documento base: `/media/DATA/Descargas/anexoVII-117-2017.pdf`
+- Documento base: `https://www.sunat.gob.pe/legislacion/superin/2017/anexoVII-117-2017.pdf`
 - Título: **Anexo N.° 8 – Catálogo de códigos**
 
 ## Nota
