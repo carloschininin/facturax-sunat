@@ -2,10 +2,330 @@
     "source": {
         "title": "Anexo N.° 8 – Catálogo de códigos",
         "document": "anexoVII-117-2017.pdf",
-        "path": "\/media\/DATA\/Descargas\/anexoVII-117-2017.pdf",
-        "catalog_source": "SUNAT \/ R.S. 117-2017"
+        "path": "/media/DATA/Descargas/anexoVII-117-2017.pdf",
+        "catalog_source": "SUNAT / R.S. 117-2017"
     },
     "catalogs": {
+        "00": {
+            "number": "00",
+            "title": "Tipos de documento extendido",
+            "description": "Código de tipo de documento (catálogo extendido)",
+            "field": "cbc:InvoiceTypeCode",
+            "catalog": "SUNAT",
+            "embedded": true,
+            "note": "Importado desde /media/DATA/Descargas/tipoComprobante_260420_1334.xlsx",
+            "reference": "/media/DATA/Descargas/tipoComprobante_260420_1334.xlsx",
+            "items": {
+                "01": {
+                    "code": "01",
+                    "description": "FACTURA"
+                },
+                "02": {
+                    "code": "02",
+                    "description": "RECIBO POR HONORARIOS"
+                },
+                "03": {
+                    "code": "03",
+                    "description": "BOLETA DE VENTA"
+                },
+                "04": {
+                    "code": "04",
+                    "description": "LIQUIDACION DE COMPRA"
+                },
+                "05": {
+                    "code": "05",
+                    "description": "BOLETO TRANS. AÉREO PASAJEROS"
+                },
+                "06": {
+                    "code": "06",
+                    "description": "BOLETO TRANS. AÉREO CARGA"
+                },
+                "07": {
+                    "code": "07",
+                    "description": "NOTA DE CRÉDITO"
+                },
+                "08": {
+                    "code": "08",
+                    "description": "NOTA DE DÉBITO"
+                },
+                "09": {
+                    "code": "09",
+                    "description": "GUIA DE REMISIÓN - REMITENTE"
+                },
+                "10": {
+                    "code": "10",
+                    "description": "RECIBO POR ARRENDAMIENTO"
+                },
+                "11": {
+                    "code": "11",
+                    "description": "PÓLIZA BOLSA DE VAL, PRODU OTR"
+                },
+                "12": {
+                    "code": "12",
+                    "description": "TICKET MAQUINA REGISTRADORA"
+                },
+                "13": {
+                    "code": "13",
+                    "description": "DOCUMENTO ENTIDADES FINANCIERA"
+                },
+                "14": {
+                    "code": "14",
+                    "description": "RECIBO SERV. PUBLICOS"
+                },
+                "15": {
+                    "code": "15",
+                    "description": "BOLETO TRANSP PUBLIC"
+                },
+                "16": {
+                    "code": "16",
+                    "description": "BOLETO DE VIAJE T.P."
+                },
+                "17": {
+                    "code": "17",
+                    "description": "DOCUMEN. IGLESIA CATÓLICA"
+                },
+                "18": {
+                    "code": "18",
+                    "description": "DOCUM. ADMIN. PRIV. FON. PENS."
+                },
+                "19": {
+                    "code": "19",
+                    "description": "BOLETO EVENTOS PUBLICOS"
+                },
+                "20": {
+                    "code": "20",
+                    "description": "COMPROBANTE DE RETENCIÓN"
+                },
+                "21": {
+                    "code": "21",
+                    "description": "EMBARQUE TRANS. CARGA MARITIMA"
+                },
+                "22": {
+                    "code": "22",
+                    "description": "COMPROB. OPER. NO HABITUALES"
+                },
+                "23": {
+                    "code": "23",
+                    "description": "PÓLIZA ADJUD. REMATE O VENTA"
+                },
+                "24": {
+                    "code": "24",
+                    "description": "CERTIF. PAGO REGALIA PERUPETRO"
+                },
+                "25": {
+                    "code": "25",
+                    "description": "DOCUMENTO DE ATRIBUCIÓN"
+                },
+                "26": {
+                    "code": "26",
+                    "description": "RECIB. SERV AGUA FINES AGRARIO"
+                },
+                "27": {
+                    "code": "27",
+                    "description": "S.C.T.R."
+                },
+                "28": {
+                    "code": "28",
+                    "description": "TARIF UNIFICADA USO AEROPUERTO"
+                },
+                "29": {
+                    "code": "29",
+                    "description": "DOCUM. EMITIDO POR COFOPRI"
+                },
+                "30": {
+                    "code": "30",
+                    "description": "DOC. EMPRE RECIB. TARJ. CRE DE"
+                },
+                "31": {
+                    "code": "31",
+                    "description": "GUIA REMISIÓN - TRANSPORTISTA"
+                },
+                "32": {
+                    "code": "32",
+                    "description": "DOC. DE INDUS. DE GAS NATURAL"
+                },
+                "34": {
+                    "code": "34",
+                    "description": "DOCUMENTO DEL OPERADOR"
+                },
+                "35": {
+                    "code": "35",
+                    "description": "DOCUMENTO DEL PARTÍCIPE"
+                },
+                "36": {
+                    "code": "36",
+                    "description": "RECIBO DISTRIBUCIÓN GAS NATURA"
+                },
+                "37": {
+                    "code": "37",
+                    "description": "DOC. CONCES. SERVI TECNI VEHIC"
+                },
+                "40": {
+                    "code": "40",
+                    "description": "CHEQUE"
+                },
+                "41": {
+                    "code": "41",
+                    "description": "REQUERIMIENTO ECONOMICO"
+                },
+                "42": {
+                    "code": "42",
+                    "description": "TRANSFERENCIA"
+                },
+                "43": {
+                    "code": "43",
+                    "description": "SALIDA DE CAJA"
+                },
+                "44": {
+                    "code": "44",
+                    "description": "RECIBO DE INGRESO"
+                },
+                "45": {
+                    "code": "45",
+                    "description": "RECIBO DE EGRESO"
+                },
+                "46": {
+                    "code": "46",
+                    "description": "PLANILLA DE MOVILIDAD"
+                },
+                "47": {
+                    "code": "47",
+                    "description": "PLANILLA DE REMUNERACIONES"
+                },
+                "48": {
+                    "code": "48",
+                    "description": "INVENTARIO INICIAL"
+                },
+                "50": {
+                    "code": "50",
+                    "description": "DECLARACION UNICA ADUANAS - ID"
+                },
+                "52": {
+                    "code": "52",
+                    "description": "DESPACHO SIMPLIF. - IMPOR SIMP"
+                },
+                "53": {
+                    "code": "53",
+                    "description": "DECLARACIÓN MENSAJERIA O COURI"
+                },
+                "54": {
+                    "code": "54",
+                    "description": "LIQUIDACIÓN DE COBRANZA"
+                },
+                "55": {
+                    "code": "55",
+                    "description": "BVME para transporte ferroviario de pasajeros"
+                },
+                "56": {
+                    "code": "56",
+                    "description": "Comprobante de pago SEAE"
+                },
+                "87": {
+                    "code": "87",
+                    "description": "NOTA DE CRÉDITO ESPECIAL"
+                },
+                "88": {
+                    "code": "88",
+                    "description": "NOTA DE DÉBITO ESPECIAL"
+                },
+                "91": {
+                    "code": "91",
+                    "description": "COMPROBANTE DE NO DOMICILIADO"
+                },
+                "96": {
+                    "code": "96",
+                    "description": "EXC. CRÉD. FISC. X RETIRO BIEN"
+                },
+                "97": {
+                    "code": "97",
+                    "description": "NOTA CRÉDITO - NO DOMICILIADO"
+                },
+                "98": {
+                    "code": "98",
+                    "description": "NOTA DÉBITO - NO DOMICIALIADO"
+                },
+                "99": {
+                    "code": "99",
+                    "description": "OTROS - CONSOLIDADO B/V"
+                },
+                "AC": {
+                    "code": "AC",
+                    "description": "AVANCES DE CAJA CHICA"
+                },
+                "CH": {
+                    "code": "CH",
+                    "description": "CHEQUE"
+                },
+                "DJ": {
+                    "code": "DJ",
+                    "description": "DECLARACION JURADA"
+                },
+                "DP": {
+                    "code": "DP",
+                    "description": "DEPOSITO"
+                },
+                "II": {
+                    "code": "II",
+                    "description": "INVENTARIO INICIAL"
+                },
+                "LA": {
+                    "code": "LA",
+                    "description": "LIQUIDACION APORTES"
+                },
+                "LE": {
+                    "code": "LE",
+                    "description": "LETRA DE CAMBIO"
+                },
+                "LI": {
+                    "code": "LI",
+                    "description": "LIQUIDACION"
+                },
+                "OI": {
+                    "code": "OI",
+                    "description": "ORDEN DE INGRESO"
+                },
+                "OP": {
+                    "code": "OP",
+                    "description": "ORDEN DE PEDIDO"
+                },
+                "OS": {
+                    "code": "OS",
+                    "description": "ORDEN DE SALIDA"
+                },
+                "PL": {
+                    "code": "PL",
+                    "description": "PLANILLA REMUNERACION"
+                },
+                "PM": {
+                    "code": "PM",
+                    "description": "PLANILLA MOVILIDAD"
+                },
+                "RE": {
+                    "code": "RE",
+                    "description": "RECIBO DE EGRESO"
+                },
+                "RI": {
+                    "code": "RI",
+                    "description": "RECIBO DE INGRESO"
+                },
+                "RQ": {
+                    "code": "RQ",
+                    "description": "REQUERIMIENTO ECONOMICO"
+                },
+                "SC": {
+                    "code": "SC",
+                    "description": "SALIDA DE CAJA"
+                },
+                "TR": {
+                    "code": "TR",
+                    "description": "TRANSFERENCIA"
+                },
+                "ZZ": {
+                    "code": "ZZ",
+                    "description": "VARIOS"
+                }
+            }
+        },
         "01": {
             "number": "01",
             "title": "Código de Tipo de documento",
@@ -102,17 +422,17 @@
             "title": "Códigos de Tipo de Unidad de Medida Comercial",
             "description": "Código del Tipo de unidad",
             "field": "@UnitCode",
-            "catalog": "UN\/ECE Recommendation 20 Revision 4 – Codes for Units of Measure Used in International Trade",
+            "catalog": "UN/ECE Recommendation 20 Revision 4 – Codes for Units of Measure Used in International Trade",
             "embedded": false,
-            "note": "El PDF no lista los valores; solo referencia el estándar UN\/ECE Recommendation 20 Revision 4.",
-            "reference": "UN\/ECE Recommendation 20 Revision 4",
+            "note": "El PDF no lista los valores; solo referencia el estándar UN/ECE Recommendation 20 Revision 4.",
+            "reference": "UN/ECE Recommendation 20 Revision 4",
             "items": []
         },
         "04": {
             "number": "04",
             "title": "Códigos de Países",
             "description": "Código de País",
-            "field": "cac:Country\/cbc:IdentificationCode",
+            "field": "cac:Country/cbc:IdentificationCode",
             "catalog": "ISO 3166-1: 2006 – Codes for the representation of names of countries and their subdivisions Part. 1: country codes",
             "embedded": false,
             "note": "El PDF no lista los valores; solo referencia el estándar ISO 3166-1.",
@@ -126,7 +446,7 @@
             "field": "cbc:TaxTypeCode",
             "catalog": "SUNAT",
             "embedded": true,
-            "note": "Los códigos UN\/ECE aplican para UBL 2.1.",
+            "note": "Los códigos UN/ECE aplican para UBL 2.1.",
             "reference": null,
             "items": {
                 "1000": {
@@ -401,7 +721,7 @@
                 },
                 "03": {
                     "code": "03",
-                    "description": "Penalidades\/ otros conceptos"
+                    "description": "Penalidades/ otros conceptos"
                 }
             }
         },
@@ -441,7 +761,7 @@
             "number": "12",
             "title": "Códigos - Documentos Relacionados Tributarios",
             "description": "Código del tipo de documentos tributarios de referencia",
-            "field": "cbc:DocumentTypeCode\/\/ cac:PrepaidPayment\/cbc:ID",
+            "field": "cbc:DocumentTypeCode// cac:PrepaidPayment/cbc:ID",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -477,7 +797,7 @@
             "number": "13",
             "title": "Ubicación Geográfica (UBIGEO)",
             "description": "Código de Ubicación Geográfica (UBIGEO)",
-            "field": ".\/cac:RegistrationAddress\/cbc:ID",
+            "field": "./cac:RegistrationAddress/cbc:ID",
             "catalog": "INEI",
             "embedded": true,
             "note": null,
@@ -7161,7 +7481,7 @@
             "number": "14",
             "title": "Códigos - Otros conceptos tributarios",
             "description": "Códigos de otros conceptos tributarios",
-            "field": "ext:UBLExtensions\/ext:UBLExtension\/ext:ExtensionContent\/sac:AdditionalInformationInvoice\/sac:AdditionalMonetaryTotal\/cbc:ID",
+            "field": "ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac:AdditionalInformationInvoice/sac:AdditionalMonetaryTotal/cbc:ID",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7219,8 +7539,8 @@
         },
         "15": {
             "number": "15",
-            "title": "Códigos - Elementos adicionales en la Factura Electrónica y\/o Boleta de Venta Electrónica",
-            "description": "Códigos de elementos adicionales a la factura y\/o boleta de venta",
+            "title": "Códigos - Elementos adicionales en la Factura Electrónica y/o Boleta de Venta Electrónica",
+            "description": "Códigos de elementos adicionales a la factura y/o boleta de venta",
             "field": null,
             "catalog": "SUNAT",
             "embedded": true,
@@ -7233,7 +7553,7 @@
                 },
                 "1002": {
                     "code": "1002",
-                    "description": "Leyenda \"TRANSFERENCIA GRATUITA DE UN BIEN Y\/O SERVICIO PRESTADO GRATUITAMENTE\""
+                    "description": "Leyenda \"TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE\""
                 },
                 "2000": {
                     "code": "2000",
@@ -7393,7 +7713,7 @@
             "number": "16",
             "title": "Códigos – Tipo de Precio de Venta Unitario",
             "description": "Tipo de precio de venta",
-            "field": "cac:AlternativeConditionPrice\/cbc:PriceTypeCode",
+            "field": "cac:AlternativeConditionPrice/cbc:PriceTypeCode",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7413,7 +7733,7 @@
             "number": "17",
             "title": "Códigos – Tipo de Operación",
             "description": "Tipo de Operación",
-            "field": "ext:UBLExtensions\/ext:UBLExtension\/ext:ExtensionContent\/sac:AdditionalInformation\/sac:SUNATTransaction\/cbc:ID",
+            "field": "ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac:AdditionalInformation/sac:SUNATTransaction/cbc:ID",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7473,7 +7793,7 @@
             "number": "18",
             "title": "Códigos – Modalidad de Traslado",
             "description": "Modalidad de traslado",
-            "field": "\/Invoice\/ext:UBLExtensions\/ext:UBLExtension\/ext:ExtensionContent\/sac:AdditionalInformation\/sac:SUNATEmbededDespatchAdvice\/cbc:TransportModeCode",
+            "field": "/Invoice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac:AdditionalInformation/sac:SUNATEmbededDespatchAdvice/cbc:TransportModeCode",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7493,7 +7813,7 @@
             "number": "19",
             "title": "Resumen Diario de boletas de venta y notas electrónicas - Códigos de estado de ítem",
             "description": "Código de estado del ítem",
-            "field": "\/SummaryDocuments\/sac:SummaryDocumentsLine\/cac:Status\/cbc:ConditionCode",
+            "field": "/SummaryDocuments/sac:SummaryDocumentsLine/cac:Status/cbc:ConditionCode",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7517,7 +7837,7 @@
             "number": "20",
             "title": "Códigos – Motivos de Traslado",
             "description": "Motivos de Traslado",
-            "field": "ext:UBLExtensions\/ext:UBLExtension\/ext:ExtensionContent\/sac:AdditionalInformation\/sac:SUNATEmbededDespatchAdvice\/cac:Shipment\/cbc:ShippingPriorityLevelCode",
+            "field": "ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/sac:AdditionalInformation/sac:SUNATEmbededDespatchAdvice/cac:Shipment/cbc:ShippingPriorityLevelCode",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7565,7 +7885,7 @@
             "number": "21",
             "title": "Documentos Relacionados - aplicable solo para la Guía de remisión electrónica",
             "description": null,
-            "field": "cac:AdditionalDocumentReference\/cbc:DocumentTypeCode",
+            "field": "cac:AdditionalDocumentReference/cbc:DocumentTypeCode",
             "catalog": "SUNAT",
             "embedded": true,
             "note": "En el PDF el encabezado tiene un error tipográfico y menciona catálogo 23; el contenido corresponde al catálogo 21.",
@@ -7601,7 +7921,7 @@
             "number": "22",
             "title": "Regímenes de Percepción",
             "description": "Régimen de Percepción",
-            "field": "\/Perception\/sac:SUNATPerceptionSystemCode",
+            "field": "/Perception/sac:SUNATPerceptionSystemCode",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7628,7 +7948,7 @@
             "number": "23",
             "title": "Regímenes de Retención",
             "description": "Régimen de Retención",
-            "field": "\/Retention\/sac:SUNATRetentionSystemCode",
+            "field": "/Retention/sac:SUNATRetentionSystemCode",
             "catalog": "SUNAT",
             "embedded": true,
             "note": null,
@@ -7792,7 +8112,7 @@
                 },
                 "1002": {
                     "code": "1002",
-                    "description": "Leyenda \"TRANSFERENCIA GRATUITA DE UN BIEN Y\/O SERVICIO PRESTADO GRATUITAMENTE\""
+                    "description": "Leyenda \"TRANSFERENCIA GRATUITA DE UN BIEN Y/O SERVICIO PRESTADO GRATUITAMENTE\""
                 },
                 "2000": {
                     "code": "2000",
