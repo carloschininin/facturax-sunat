@@ -47,6 +47,8 @@ final class SunatCatalogs
         'tipo_servicio_publico' => '56',
         'tipo_servicio_publico_telecom' => '57',
         'tipo_medidor' => '58',
+        'medio_pago' => '59',
+        'medios_pago' => '59',
     ];
 
     private array $data;
