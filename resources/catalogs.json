@@ -8042,7 +8042,40 @@
             "embedded": false,
             "note": "El PDF no lista los valores; solo referencia el catálogo UNSPSC.",
             "reference": "United Nations Standard Products and Services Code (UNSPSC) v14_0801",
-            "items": []
+            "items": [],
+            "annexesNote": "Andamiaje inerte a la espera de la publicación oficial de los anexos 25.1, 25.2 y 25.3. Ningún código listado: cargar solo desde la resolución de superintendencia cuando exista.",
+            "annexes": {
+                "25.1": {
+                    "number": "25.1",
+                    "title": "Anexo 25.1 – Bienes y servicios de minería, hidrocarburos e insumos controlados",
+                    "description": "Códigos de producto SUNAT del anexo 25.1",
+                    "scope": "Oro, explosivos, insumos químicos fiscalizados, combustibles, maquinaria y equipo para minería y construcción, y servicios asociados.",
+                    "published": false,
+                    "resolution": null,
+                    "note": "Pendiente de publicación oficial por SUNAT. No existe número de resolución de superintendencia a la fecha.",
+                    "items": []
+                },
+                "25.2": {
+                    "number": "25.2",
+                    "title": "Anexo 25.2 – Bienes agropecuarios, hidrobiológicos y materias primas",
+                    "description": "Códigos de producto SUNAT del anexo 25.2",
+                    "scope": "Harina de pescado, minerales no auríferos, piedra, arena, madera, chatarra, carnes, caña de azúcar, páprika, aceite de pescado, leche y maíz.",
+                    "published": false,
+                    "resolution": null,
+                    "note": "Pendiente de publicación oficial por SUNAT. No existe número de resolución de superintendencia a la fecha.",
+                    "items": []
+                },
+                "25.3": {
+                    "number": "25.3",
+                    "title": "Anexo 25.3 – Bienes vinculados a percepción e ISC",
+                    "description": "Códigos de producto SUNAT del anexo 25.3",
+                    "scope": "Dióxido de carbono, PET, envases, cerveza, agua y granos sujetos a percepción o impuesto selectivo al consumo.",
+                    "published": false,
+                    "resolution": null,
+                    "note": "Pendiente de publicación oficial por SUNAT. No existe número de resolución de superintendencia a la fecha.",
+                    "items": []
+                }
+            }
         },
         "51": {
             "number": "51",

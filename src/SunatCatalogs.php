@@ -51,6 +51,19 @@ final class SunatCatalogs
         'medios_pago' => '59',
     ];
 
+    /**
+     * Alias de los anexos del catálogo 25 (código producto SUNAT).
+     * Se mantienen separados de ALIASES porque un anexo no es un catálogo.
+     */
+    private const array ANNEX_ALIASES = [
+        'producto_sunat_25_1' => '25.1',
+        'producto_sunat_25_2' => '25.2',
+        'producto_sunat_25_3' => '25.3',
+    ];
+
+    /** Catálogo que agrupa los anexos de código de producto. */
+    private const string ANNEX_CATALOG = '25';
+
     private array $data;
 
     public function __construct(
@@ -154,6 +167,94 @@ final class SunatCatalogs
     public function resolve(string|int $catalog, string|int $code, ?string $default = null): ?string
     {
         return $this->description($catalog, $code) ?? $default;
+    }
+
+    public function annexAliases(): array
+    {
+        return self::ANNEX_ALIASES;
+    }
+
+    /**
+     * Devuelve todos los anexos declarados para un catálogo.
+     */
+    public function annexes(string|int $catalog = self::ANNEX_CATALOG): array
+    {
+        return $this->catalog($catalog)['annexes'] ?? [];
+    }
+
+    /**
+     * Resuelve el número canónico de un anexo a partir de su alias o notación.
+     */
+    public function annexNumber(string|int $annex): ?string
+    {
+        $value = trim((string) $annex);
+
+        if ('' === $value) {
+            return null;
+        }
+
+        $alias = strtolower($value);
+        if (isset(self::ANNEX_ALIASES[$alias])) {
+            return self::ANNEX_ALIASES[$alias];
+        }
+
+        $normalized = str_replace(['_', '-'], '.', $alias);
+        if (in_array($normalized, self::ANNEX_ALIASES, true)) {
+            return $normalized;
+        }
+
+        return null;
+    }
+
+    public function annex(string|int $annex): ?array
+    {
+        $number = $this->annexNumber($annex);
+
+        if (null === $number) {
+            return null;
+        }
+
+        return $this->annexes()[$number] ?? null;
+    }
+
+    public function hasAnnex(string|int $annex): bool
+    {
+        return null !== $this->annex($annex);
+    }
+
+    public function annexItems(string|int $annex): array
+    {
+        return $this->annex($annex)['items'] ?? [];
+    }
+
+    /**
+     * Indica si el anexo ya cuenta con códigos oficiales cargados.
+     * Es la condición que debe consultar cualquier validación antes de aplicarse.
+     */
+    public function isAnnexPopulated(string|int $annex): bool
+    {
+        return [] !== $this->annexItems($annex);
+    }
+
+    /**
+     * Busca un código dentro de un anexo con comparación EXACTA.
+     * No se aplica la coincidencia laxa de codesMatch(): los códigos de producto
+     * son de longitud fija y un cero a la izquierda cambia el código.
+     */
+    public function annexItem(string|int $annex, string|int $code): ?array
+    {
+        $needle = trim((string) $code);
+
+        if ('' === $needle) {
+            return null;
+        }
+
+        return $this->annexItems($annex)[$needle] ?? null;
+    }
+
+    public function annexDescription(string|int $annex, string|int $code): ?string
+    {
+        return $this->annexItem($annex, $code)['description'] ?? null;
     }
 
     public function toJson(string|int|null $catalog = null, int $flags = JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE): string

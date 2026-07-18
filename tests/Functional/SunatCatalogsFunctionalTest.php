@@ -40,4 +40,29 @@ final class SunatCatalogsFunctionalTest extends TestCase
         self::assertSame('DOC. NACIONAL DE IDENTIDAD', $this->catalogs->resolve('06', '001'));
         self::assertSame('DEFAULT', $this->catalogs->resolve('01', '999', 'DEFAULT'));
     }
+
+    public function testDetractionTransportCatalogsAreAvailable(): void
+    {
+        self::assertSame('Servicio de transporte de bienes realizado por vía terrestre', $this->catalogs->description('54', '027'));
+        self::assertSame('Depósito en cuenta', $this->catalogs->description('59', '001'));
+
+        $expectedAttributes = [
+            '3006' => 'Numero Registro MTC',
+            '3007' => 'Configuración Vehicular',
+            '3008' => 'Punto de Origen',
+            '3009' => 'Punto Destino',
+            '3010' => 'Valor Referencial Preliminar por Viaje',
+            '3011' => 'Valor Referencial Preliminar por Vehículo',
+            '3012' => 'Valor Referencial Preliminar por TM en Viaje',
+            '3013' => 'Carga Efectiva en TM por Vehículo',
+            '3014' => 'Carga Útil en TM del Vehículo en Viaje',
+        ];
+
+        foreach ($expectedAttributes as $code => $descriptionFragment) {
+            self::assertStringContainsString(
+                $descriptionFragment,
+                $this->catalogs->description('55', $code) ?? '',
+            );
+        }
+    }
 }
