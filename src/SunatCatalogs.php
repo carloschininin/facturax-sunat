@@ -35,6 +35,8 @@ final class SunatCatalogs
         'estado_item_resumen' => '19',
         'motivo_traslado' => '20',
         'documento_relacionado_guia' => '21',
+        'entidad_autorizadora' => '37',
+        'entidad_autorizadora_vehiculo' => '37',
         'regimen_percepcion' => '22',
         'regimen_retencion' => '23',
         'servicio_publico' => '24',

@@ -8077,6 +8077,66 @@
                 }
             }
         },
+        "37": {
+            "number": "37",
+            "title": "Catálogo D37 – Entidad Autorizadora del vehículo (GRE)",
+            "description": "Entidad emisora de la autorización especial del vehículo",
+            "field": "/DespatchAdvice/cac:Shipment/cac:TransportHandlingUnit/cac:TransportEquipment/cac:ShipmentDocumentReference/cbc:ID@schemeID",
+            "catalog": "SUNAT",
+            "embedded": false,
+            "note": "Catálogo publicado por SUNAT sin incidencia tributaria (campos 37 y 40 del anexo RS 000123-2022). El schemeID usa el código numérico, no la abreviatura.",
+            "reference": null,
+            "items": {
+                "01": {
+                    "code": "01",
+                    "description": "SUPERINTENDENCIA NACIONAL DE CONTROL DE SERVICIOS DE SEGURIDAD, ARMAS, MUNICIONES Y EXPLOSIVOS DE USO CIVIL"
+                },
+                "02": {
+                    "code": "02",
+                    "description": "DIRECCION GENERAL DE MEDICAMENTOS, INSUMOS Y DROGAS"
+                },
+                "03": {
+                    "code": "03",
+                    "description": "DIRECCION GENERAL DE SALUD AMBIENTAL"
+                },
+                "04": {
+                    "code": "04",
+                    "description": "SERVICIO NACIONAL DE SANIDAD AGRARIA"
+                },
+                "05": {
+                    "code": "05",
+                    "description": "SERVICIO NACIONAL FORESTAL Y DE FAUNA SILVESTRE"
+                },
+                "06": {
+                    "code": "06",
+                    "description": "MINISTERIO DE TRANSPORTES Y COMUNICACIONES"
+                },
+                "07": {
+                    "code": "07",
+                    "description": "MINISTERIO DE LA PRODUCCION"
+                },
+                "08": {
+                    "code": "08",
+                    "description": "MINISTERIO DEL AMBIENTE"
+                },
+                "09": {
+                    "code": "09",
+                    "description": "ORGANISMO NACIONAL DE SANIDAD PESQUERA"
+                },
+                "10": {
+                    "code": "10",
+                    "description": "MUNICIPALIDAD METROPOLITANA DE LIMA"
+                },
+                "11": {
+                    "code": "11",
+                    "description": "MINISTERIO DE SALUD"
+                },
+                "12": {
+                    "code": "12",
+                    "description": "GOBIERNO REGIONAL"
+                }
+            }
+        },
         "51": {
             "number": "51",
             "title": "Código de tipo de factura",

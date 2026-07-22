@@ -65,4 +65,14 @@ final class SunatCatalogsFunctionalTest extends TestCase
             );
         }
     }
+
+    public function testEntidadAutorizadoraCatalogD37IsAvailable(): void
+    {
+        $catalog = $this->catalogs->catalog('entidad_autorizadora');
+
+        self::assertNotNull($catalog);
+        self::assertSame('37', $catalog['number']);
+        self::assertSame('MINISTERIO DE TRANSPORTES Y COMUNICACIONES', $this->catalogs->description('37', '06'));
+        self::assertNotNull($this->catalogs->item('37', '01'));
+    }
 }
