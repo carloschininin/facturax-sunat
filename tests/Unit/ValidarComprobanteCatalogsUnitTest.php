@@ -48,4 +48,12 @@ final class ValidarComprobanteCatalogsUnitTest extends TestCase
         self::assertSame('No hallado', $this->catalogs->condDomiRuc('20'));
         self::assertNull($this->catalogs->condDomiRuc('99'));
     }
+
+    public function testResolvesCodComp(): void
+    {
+        self::assertSame('Factura', $this->catalogs->codComp('01'));
+        self::assertSame('Recibo por honorarios', $this->catalogs->codComp('R1'));
+        self::assertNull($this->catalogs->codComp('99'));
+        self::assertCount(7, $this->catalogs->tiposComprobante());
+    }
 }

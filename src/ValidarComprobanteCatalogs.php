@@ -48,6 +48,21 @@ final class ValidarComprobanteCatalogs
         '20' => 'No hallado',
     ];
 
+    /**
+     * Tipo de comprobante (codComp) aceptado por validarcomprobante. Distinto del catálogo 01
+     * (Anexo N.° 8) de SunatCatalogs: éste es el subconjunto específico que documenta el manual
+     * de validarcomprobante (incluye 04, R1, R7 que el catálogo 01 no trae).
+     */
+    private const array COD_COMP = [
+        '01' => 'Factura',
+        '03' => 'Boleta de venta',
+        '04' => 'Liquidación de compra',
+        '07' => 'Nota de crédito',
+        '08' => 'Nota de débito',
+        'R1' => 'Recibo por honorarios',
+        'R7' => 'Nota de crédito de recibos',
+    ];
+
     public function estadoCp(string $code): ?string
     {
         return self::ESTADO_CP[$code] ?? null;
@@ -84,5 +99,16 @@ final class ValidarComprobanteCatalogs
     public function condicionesDomiRuc(): array
     {
         return self::COND_DOMI_RUC;
+    }
+
+    public function codComp(string $code): ?string
+    {
+        return self::COD_COMP[$code] ?? null;
+    }
+
+    /** @return array<string, string> */
+    public function tiposComprobante(): array
+    {
+        return self::COD_COMP;
     }
 }
